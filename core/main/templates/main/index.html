@@ -1,0 +1,369 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main id="main" class="home">
+    <section id="about">
+		<div class="custom-body-container" style="position: relative; z-index: 1;">
+			<h1 class="position-relative d-none d-md-block d-block">Производство<br>фудтраков <span>премиум<br>класса</span> во Владивостоке</h1>
+			<h1 class="position-relative h2 d-md-none">Производство<br>фудтраков <br><span>премиум класса</span><br> во Владивостоке</h1>
+			
+			<p class="help-text my-4 position-relative text-about-detect-of-button" >Продажи по России и всему миру</p>
+
+			<a data-bs-toggle="modal" data-bs-target="#mainFeedBackModal" class="btn btn-lg position-relative d-none d-md-block d-block"  role="button">
+				<p>Заказать звонок</p>
+			</a>
+			  
+			<div class="m-2 d-md-none fixed-element button-model d-flex justify-content-around w-100" style="z-index: 1;">
+				<a data-bs-toggle="modal" data-bs-target="#mainFeedBackModal" class="btn btn-lg w-100" style="margin-left: -5%;" role="button">
+					<p>Заказать звонок</p>
+				</a>
+			</div>
+		</div>
+		<img src="{% static 'img/img_bg_track.webp' %}" class="auto-img-desktop d-none d-md-block d-block" alt="hero-img">
+		<div class="auto-img-desktop d-md-none" style="overflow: hidden; margin-left: -9%; width: 103%;">
+			<img src="{% static 'img/img_bg_track.webp' %}" style="width: 119%; margin-left: -15%;" alt="hero-img">
+		</div>
+		
+	</section>
+	
+	<section id="advantages">
+		<h1 class="text-uppercase section-header" style="position: relative; z-index: 1;">Наши основные преимущества</h1>
+		<div class="custom-body-container" id="advantages-slider" >
+			<div class="row advantages-slider" style="margin-left: 0%;">
+				<div class="col wrapper ps-lg-0-1">
+					<div class="adv-item">
+						<svg class="w-100 text-center" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="25.4" cy="25" r="25" fill="#FF6913" fill-opacity="0.15"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M32.2718 20.2L28.1692 16.1C27.5539 15.4 26.6308 15 25.7077 15H20.0667C18.6308 15 17.4 16.2 17.4 17.7V32.4C17.4 33.8 18.6308 35 20.0667 35H30.7334C32.1692 35 33.4 33.8 33.4 32.3V23.9V22.7C33.4 21.7 32.9898 20.8 32.2718 20.2ZM28.1996 26H22.1996C21.5996 26 21.1996 26.4 21.1996 27C21.1996 27.6 21.5996 28 22.1996 28H28.1996C28.7996 28 29.1996 27.6 29.1996 27C29.1996 26.4 28.6996 26 28.1996 26ZM22.1996 29H25.1996C25.6996 29 26.1996 29.4 26.1996 30C26.1996 30.6 25.7996 31 25.1996 31H22.1996C21.5996 31 21.1996 30.6 21.1996 30C21.1996 29.4 21.5996 29 22.1996 29Z" fill="#FF9213"/>
+						</svg>
+						<p>Полный комплект<br>документов</p>
+					</div>
+				</div>
+
+				<div class="col wrapper">
+					<div class="adv-item">
+						<svg class="w-100 text-center" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="25.2001" cy="25" r="25" fill="#FF6913" fill-opacity="0.15"/>
+						<path d="M16.2001 22C15.6001 22 15.2001 22.4033 15.2001 23.0084V32.9916C15.2001 33.5967 15.6001 34 16.2001 34C16.8001 34 17.2001 33.5967 17.2001 32.9916V23.0084C17.2001 22.4033 16.8001 22 16.2001 22Z" fill="#FF9213"/>
+						<path d="M32.9014 21.8687H26.6584L27.8667 18.2323C28.3702 16.7172 27.1619 15 25.4501 15C24.7452 15 24.0403 15.303 23.6375 15.8081L19.207 20.8586C18.6028 21.5657 18.2001 22.4747 18.2001 23.3839V32.6768C18.2001 33.9899 19.207 35 20.516 35H29.8806C31.1896 35 32.3979 34.0909 32.8007 32.7778L35.1167 24.899C35.5195 23.3839 34.4118 21.8687 32.9014 21.8687Z" fill="#FF9213"/>
+						</svg>
+						<p>Международные<br>стандарты</p>
+					</div>
+				</div>
+
+				<div class="col wrapper">
+					<div class="adv-item">
+						<svg class="w-100 text-center" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="25" cy="25" r="25" fill="#FF6913" fill-opacity="0.15"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M15 25C15 30.5 19.5 35 25 35C30.5 35 35 30.5 35 25C35 19.5 30.5 15 25 15C19.5 15 15 19.5 15 25ZM25 26.0006H29.9C30.5 26.0006 30.9 25.6006 30.9 25.0006C30.9 24.4006 30.5 24.0006 29.9 24.0006H26V20.1006C26 19.5006 25.6 19.1006 25 19.1006C24.4 19.1006 24 19.5006 24 20.1006V25.0006C24 25.6006 24.4 26.0006 25 26.0006Z" fill="#FF9213"/>
+						</svg>
+						<p>Срок изготовления<br>до 14 дней</p>
+					</div>
+				</div>
+
+				<div class="col wrapper">
+					<div class="adv-item">
+						<svg class="w-100 text-center" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="25.7998" cy="25" r="25" fill="#FF6913" fill-opacity="0.15"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M27.6343 14.3754L33.8364 17.2787C35.2369 17.9795 36.0372 19.5813 35.7371 21.0831C35.3369 24.3868 33.6363 30.5939 27.9344 35.1991C27.3342 35.6997 26.5339 36 25.8337 36C25.1334 36 24.3331 35.7998 23.6329 35.2992C17.931 30.694 16.3304 24.4869 15.8302 21.1831C15.6302 19.5813 16.4304 17.9795 17.8309 17.2787L24.0331 14.3754C25.1334 13.8749 26.5339 13.8749 27.6343 14.3754ZM24.4991 27.8001C24.6991 28.1001 24.9991 28.2001 25.2991 28.2001C25.5991 28.2001 25.8991 28.1001 25.9991 27.8001L30.9991 21.8001C31.3991 21.4001 31.2991 20.8001 30.8991 20.4001C30.4991 20.0001 29.8991 20.1001 29.4991 20.5001L25.2991 25.6001L23.2991 23.2001C22.9991 22.8001 22.2991 22.7001 21.8991 23.1001C21.4991 23.4001 21.3991 24.1001 21.7991 24.5001L24.4991 27.8001Z" fill="#FF9213"/>
+						</svg>
+						<p>Гарантия<br>до 24 месяцев</p>
+					</div>
+				</div>
+
+				<div class="col wrapper pe-lg-2-1">
+					<div class="adv-item">
+						<svg class="w-100 text-center" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="25.5999" cy="25" r="25" fill="#FF6913" fill-opacity="0.15"/>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M24.2005 14.1C26.8005 13.8 29.3005 14.7 31.2005 16.4C33.0005 18 34.0005 20.3 34.0005 22.7C34.0005 24.5 33.5005 26.2 32.4005 27.7L27.3005 34.8C26.8005 35.6 25.9005 36 25.0005 36C24.1005 36 23.2005 35.6 22.8005 34.9L17.7004 27.8C16.2004 25.8 15.7004 23.4 16.2004 21C16.9004 17.3 20.2005 14.4 24.2005 14.1ZM28.3999 22.6998C28.3999 24.5775 26.8776 26.0998 24.9999 26.0998C23.1221 26.0998 21.5999 24.5775 21.5999 22.6998C21.5999 20.822 23.1221 19.2998 24.9999 19.2998C26.8776 19.2998 28.3999 20.822 28.3999 22.6998Z" fill="#FF9213"/>
+								</svg>
+						<p>Доставка<br>по всей вселенной</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="catalog">
+		<div class="custom-header-container">
+			<div class="row">
+				<h3 class="d-block d-xxl-none text-center">Capsula</h3>
+				<div class="col-xxl-7 order-xxl-2">
+					<div class="wrapper">
+						<div class="btn-group">
+							<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+							<label id="active-label" class="btn" onclick="changeView(this)" for="option1">Снаружи</label>
+
+							<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+							<label class="btn" onclick="changeView(this)" for="option2">Внутри</label>
+						</div>
+					</div>
+					<div>
+						
+						<div id="canvas-container" class="mb-3">
+							<div id="popups"></div>
+							<div id="communicate" style="height: 20px; border-top: 2px solid #FF6913; border-right: 2px solid #FF6913 "></div>
+							<div id="overlay2"></div>
+							
+						</div>
+					</div>
+				</div>
+				<h6 id="color-control"class="d-block d-lg-none text-left">Цвет: белый</h6>
+				<div class="col-xxl-5 text-xxl-start order-xxl-1">
+					<h3 class="d-none d-xxl-block">Capsula</h3>
+					<div class="colors">
+						<span id="color-white-span" onclick="changeColor(this)" class="active-color" style="background-color: white; "></span>
+						<span id="color-purple-span" onclick="changeColor(this)" style="background-color: purple;"></span>
+						<span id="color-blue-span" onclick="changeColor(this)" style="background-color: blue;"></span>
+						<span id="color-yellow-span" onclick="changeColor(this)" style="background-color: yellow;"></span>
+						<span id="color-red-span" onclick="changeColor(this)" style="background-color: red;"></span>
+						<span id="color-black-span" onclick="changeColor(this)" style="background-color: black;"></span>
+					</div>
+					
+					<h4 class="text-lift d-none d-lg-block d-block">от 1 600 000 ₽</h4>
+					<h4 class="text-center d-lg-none">от 1 600 000 ₽</h4>
+					
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs scrol-tab-nav">
+					    <li class="nav-item">
+							<a class="nav-link active" data-bs-toggle="tab" href="#home">Доходность</a>
+					    </li>
+					    <li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#menu4">Снаружи</a>
+					    </li>
+					    
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#menu1">Внутри</a>
+					    </li>
+					    <li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" href="#menu3">Опции</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+					    <div class="tab-pane fade" id="menu4">
+							<div class="row row-cols-2 odd">
+								<div class="col">Окно-слайдер:</div>
+								<div class="col">раздвижное аллюминиевое,<br>2 створки</div>
+								
+								<div class="col">Каркас кузова:</div>
+								<div class="col">стальные профили с 3-слойным<br>антикоррозионным покрытием</div>
+								
+								<div class="col">Курпус:</div>
+								<div class="col">композитные панели</div>
+								
+								<div class="col">Подвеска:</div>
+								<div class="col">AL-KO (Германия), двухосная</div>
+								
+								<div class="col">Утепление:</div>
+								<div class="col">вспененный изолон, 20 мм</div>
+								
+								<div class="col">Освещение:</div>
+								<div class="col">две светодиодные ленты на 12В,<br>влагозащита IP65</div>
+								
+								<div class="col">Клиренс:</div>
+								<div class="col">20 см</div>
+								
+								<div class="col">Масса трака:</div>
+								<div class="col">950 кг</div>
+								
+								<div class="col">Допустимая масса прицепа:</div>
+								<div class="col">2000 кг</div>
+							</div>
+						</div>
+					    <div class="tab-pane fade" id="menu1">
+							<div class="row row-cols-2 odd">
+								<div class="col">Обшивка:</div>
+								<div class="col">пищевая нержавеющая сталь</div>
+								
+								<div class="col">Рабочие столы:</div>
+								<div class="col">2 шт., пищевая нержавеющая сталь</div>
+								
+								<div class="col">Сервировочная полка:</div>
+								<div class="col">над окном, ↔ - 3.5 м</div>
+								
+								<div class="col">Отопление:</div>
+								<div class="col">тепловая завеса Ballu BHC<br>площад отопления до 20 м<sup>2</sup></div>
+								
+								<div class="col">Водоснабжение:</div>
+								<div class="col">раковина с проточным водонагревателем,<br>2 бака по 50л для чистой и грязной воды</div>
+								
+								<div class="col">Электричество:</div>
+								<div class="col">14 влагостойких розеток</div>
+								
+								<div class="col">Освещение:</div>
+								<div class="col">две светодиодные ленты на 12В,<br>холодный свет</div>
+								
+								<div class="col">Холодильное оборудование:</div>
+								<div class="col">на 150 л</div>
+								
+								<div class="col">Пол:</div>
+								<div class="col">Ламинированная фанера 20мм,<br>
+												 Рифленый автолин 2мм,<br>
+												 Подложка-утеплитель изолон 2мм
+								</div>
+							</div>
+						</div>
+					    
+						<div class="tab-pane fade" id="menu3">
+							<div class="row row-cols-1">
+								<div class="col">Изготовление кузова с длинной 3м, 6м, 9м</div>
+								<div class="col"></div>
+								
+								<div class="col">Выбор утеплителя: пищевая сталь, пенопласт, стекловолокно</div>
+								<div class="col">Выбор материала теплого пола</div>
+								<div class="col">Выбор сечения кабелей электропроводки</div>
+								
+								<div class="col"></div>
+								
+								<div class="col">Установка дополнительных источников освещения</div>
+								<div class="col">Установка кондиционера</div>
+								<div class="col">Установка IP-видеокамер</div>
+								<div class="col"></div>
+								
+								<div class="col" style="color: #FF6913; font-weight: 800">Подробности можно уточнить у нашего менеджера</div>
+							</div>
+						</div>
+						
+					    <div class="tab-pane active odd" id="home">
+							<div class="row row-cols-2">
+								<div class="col">Рабочие места:</div>
+								<div class="col">8</div>
+								
+								<div class="col">Товарный запас:</div>
+								<div class="col">до 7 дней</div>
+								
+								<div class="col">Категория прав:</div>
+								<div class="col">В</div>
+								
+								<div class="col">Объем выручки:</div>
+								<div class="col">до 150 000 ₽ / день</div>
+								
+								<div class="col">Окупаемость:</div>
+								<div class="col">6-8 месяцев</div>
+								
+								<div class='col'></div><div class='col'></div>
+								
+								<div class="col">Внешние габариты:</div>
+								<div class="col">↔ - 6.1 м, ↕ - 2.4 м</div>
+								
+								<div class="col">Внутренние габариты:</div>
+								<div class="col">↔ - 5.95 м, ↕ - 2.2 м</div>
+								
+								<div class="col">Окно-слайдер:</div>
+								<div class="col">↔ - 3.5 м, ↕ - 1.2 м</div>
+								
+								<div class="col">Вытяжной зонт:</div>
+								<div class="col">↔ - 1.5 м, ↕ - 0,4 м</div>
+								
+								<div class="col">Внутренняя площадь:</div>
+								<div class="col">15 м<sup>2</sup></div>
+							</div>
+						</div>
+					</div>
+										
+					
+					
+					<div class="buttons d-flex tab-pane">
+						<a data-bs-toggle="modal" data-bs-target="#mainFeedBackModal" class="btn btn-lg d-none d-md-block class-buttom-or" style="margin-right: 10px; height: 64px;" role="button" aria-pressed="true">
+							<p style="line-height: 45px;">Заказать звонок</p>
+						</a>
+						
+						<a href="{% static 'info-track.pdf' %}" download class="btn btn-lg model-style-buttom-download buttom-download" role="button" aria-pressed="true">
+							<p>
+								<svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M4 5.4C4 3.59835 5.40423 2 7.3134 2H12.3425C13.3927 2 14.4567 2.39181 15.2604 3.19085L15.2701 3.2005L18.8865 6.89607C19.6883 7.69647 20.0956 8.869 19.9809 9.95713V18.6C19.9809 20.4017 18.5767 22 16.6675 22H7.3134C5.40423 22 4 20.4017 4 18.6V5.4ZM7.3134 4C6.60742 4 6 4.60165 6 5.4V18.6C6 19.3983 6.60742 20 7.3134 20H16.6675C17.3735 20 17.9809 19.3983 17.9809 18.6V9.9C17.9809 9.85827 17.9835 9.8166 17.9887 9.77527C18.0505 9.28453 17.8563 8.692 17.4712 8.30913L17.4615 8.29947L13.8459 4.60483C13.4431 4.20669 12.8996 4 12.3425 4H7.3134Z" fill="white"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 12C12.5523 12 13.0001 12.4477 13.0001 13V17C13.0001 17.3844 12.7797 17.7348 12.4332 17.9013C12.0867 18.0678 11.6755 18.021 11.3753 17.7809L9.37534 16.1809C8.94408 15.8359 8.87414 15.2065 9.21921 14.7753C9.56421 14.3441 10.1935 14.2741 10.6247 14.6191L11.0001 14.9194V13C11.0001 12.4477 11.4477 12 12.0001 12Z" fill="white"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7809 14.7748C15.1259 15.206 15.056 15.8354 14.6247 16.1804L12.6247 17.7804C12.1935 18.1254 11.5642 18.0554 11.2192 17.6242C10.8741 17.1929 10.9441 16.5636 11.3753 16.2186L13.3753 14.6186C13.8066 14.2736 14.4359 14.3435 14.7809 14.7748Z" fill="white"/>
+								</svg>
+								Спецификация
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="gallery">
+		<div class="gallery-slider">
+			{% for alt, name in photo_list %}
+				<div class="card mx-2 photo-scrol">
+					<a class="example-image-link" href="{% static 'img/gallery/'%}{{forloop.counter}}.png" data-lightbox="example-set">
+						<img src="{% static 'img/gallery/'%}{{forloop.counter}}.png" class="w-10" alt="{{alt}}">
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+	
+	
+	<section id="contact">
+		<h2 class="text-center marg-top">Контакты</h2>
+		<div class="custom-header-container">
+			<div class="row row-cols-1 row-cols-lg-2">
+				<div class="col">
+					<div class="item">
+						<h5>Адрес</h5>
+						<p>г. Владивосток, ул. Междугородняя, д. 42</p>
+					</div>
+					
+					<div class="item">
+						<h5>Телефон</h5>
+						<p>+7 (966) 357-00-09</p>
+					</div>
+					
+					<div class="item">
+						<h5>Электронный адрес</h5>
+						<p>karavan-vkusa@mail.ru</p>
+					</div>
+					
+					<div class="item">
+						<a href="https://wa.me/79663570009" target="_blank">
+							<svg id="my-svg-tel-cont" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path id="path3" d="M0.23811 23.9383C0.103435 23.8636 0.00227693 23.6936 1.47015e-06 23.5382C-0.000913498 23.4757 0.425373 22.3169 0.947304 20.9632L1.89627 18.5018L1.74287 18.2374C1.4607 17.751 0.89826 16.5701 0.722866 16.0957C0.499497 15.4915 0.219131 14.3725 0.111413 13.6552C0.00684344 12.9589 -0.00942146 11.1556 0.0830519 10.5108C0.481544 7.73221 1.63132 5.38558 3.51974 3.49674C5.40619 1.60986 7.78259 0.441754 10.5087 0.0613207C11.0946 -0.0204402 12.9258 -0.0204402 13.5117 0.0613207C17.0223 0.551221 20.0075 2.38783 21.9525 5.2544C22.9831 6.77328 23.6111 8.40448 23.9129 10.3465C24.0181 11.0234 24.031 12.8696 23.935 13.5144C23.527 16.256 22.3415 18.6551 20.4808 20.505C17.5792 23.3897 13.4504 24.5886 9.40609 23.7209C8.38141 23.501 6.84403 22.8908 5.88698 22.3241L5.65237 22.1852L3.11862 23.0924C1.72505 23.5913 0.53207 23.9998 0.467553 24C0.403036 24.0002 0.299787 23.9725 0.23811 23.9383Z" fill="#3E3E3E"/>
+								<path d="M17.1943 17.1744C16.8536 17.5112 16.5048 17.7262 16.0377 17.8873C15.6009 18.038 14.8201 18.078 14.3563 17.9735C13.2753 17.7299 11.6201 16.8716 10.2037 15.82C8.86541 14.8264 7.71319 13.3824 6.75392 11.4965C6.00955 10.0331 5.81203 9.09969 6.04989 8.16947C6.3114 7.14673 7.11789 6.30238 8.11253 6.00998C8.29317 5.95688 8.56119 5.93506 9.0329 5.93506C9.63938 5.93506 9.70961 5.94386 9.82455 6.0343C9.90433 6.09707 10.1607 6.54978 10.5223 7.26626L11.094 8.39899L11.0924 8.79791C11.0909 9.15458 11.0733 9.23413 10.9255 9.54891C10.8346 9.74256 10.6205 10.074 10.4498 10.2855L10.1395 10.67L10.3597 11.1091C10.9321 12.2508 11.7765 13.085 12.9452 13.6635L13.3408 13.8593L13.6097 13.6165C14.1773 13.1042 14.7424 12.8579 15.2713 12.8924C15.5792 12.9125 15.6699 12.9491 16.7258 13.4787C17.3452 13.7893 17.8942 14.0903 17.9458 14.1475C18.0286 14.2394 18.0414 14.3301 18.0547 14.9208C18.0687 15.5419 18.0609 15.6166 17.9457 15.9598C17.7834 16.4434 17.5466 16.8262 17.1943 17.1744Z" fill="#B6B6B6"/>
+							</svg>
+						</a>
+				
+						<a href="https://t.me/+79663570009" target="_blank" class="m-2">
+							<svg id="my-svg-tg-cont" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path id="path4" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#3E3E3E"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.43177 11.8735C8.93001 10.3493 11.2627 9.34452 12.4299 8.85905C15.7624 7.47294 16.4549 7.23216 16.9062 7.22421C17.0055 7.22246 17.2275 7.24706 17.3712 7.36372C17.4926 7.46223 17.526 7.5953 17.542 7.6887C17.558 7.78209 17.5779 7.99485 17.5621 8.1611C17.3815 10.0586 16.6001 14.6633 16.2026 16.7885C16.0343 17.6877 15.7031 17.9893 15.3825 18.0188C14.6856 18.0829 14.1564 17.5582 13.4815 17.1158C12.4253 16.4235 11.8287 15.9925 10.8035 15.3169C9.61871 14.5362 10.3868 14.1071 11.062 13.4058C11.2387 13.2222 14.309 10.4295 14.3685 10.1761C14.3759 10.1444 14.3828 10.0263 14.3126 9.96397C14.2425 9.90161 14.1389 9.92293 14.0642 9.93989C13.9583 9.96394 12.271 11.0791 9.00252 13.2855C8.52361 13.6143 8.08982 13.7746 7.70117 13.7662C7.2727 13.7569 6.44851 13.5239 5.83582 13.3247C5.08431 13.0805 4.48704 12.9513 4.53905 12.5364C4.56614 12.3203 4.86371 12.0993 5.43177 11.8735Z" fill="#B6B6B6"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col test">
+					<form id="form-consult" action="" method="POST" enctype="multipart/form-data">
+						{% csrf_token %}
+						<div class="row row-cols-1">
+							<div class="col">
+								{{form.name}}
+							</div>
+							<div class="col">
+								{{form.phone}}
+							</div>
+							<div class="col">
+								{{form.question}}
+							</div>
+							
+							<div class="col text-center success-send" role="alert">
+                                <p>Заявка отправлена! <br>Мы скоро свяжемся с Вами</p>
+                            </div>
+							
+							<div id="call-btn">
+								<button type="submit" class="btn btn-primary w-100 text-center" id="form-buttom" role="button" onclick="validateInput();" aria-pressed="true">
+									<p style="color:white">Отправить заявку</p>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+		
+{% endblock %}

@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="yandex-verification" content="aeb337622582f82c" />
+	<meta name="google-site-verification" content="4Lf2lBiDqRn64Qcl0ztqTe9FH9jQnI9QXH_nVwpBVAs" />
+
+	<meta name="robots" content="noyaca"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Купить фудтрак на колесах | Изготовление и продажа фудтраков и торговых прицепов на колесах. +7 (908) 440-22-07"> 
+
+	<title>Караван Вкуса, Коммерческий транспорт,Купить фудтрак</title>
+	{% load static %}
+	<link href="{% static 'css/main.css' %}" rel="stylesheet">	
+	<link href="https://fonts.cdnfonts.com/css/manrope-3" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+	<!--<link href="{% static 'img/favicon.ico' %}" rel="icon">
+	<link href="{% static 'img/favicon.ico' %}" rel="apple-touch-icon">-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+<style>
+	.fixed-top-custom{
+		position: fixed;
+		top: 10px;
+		right: 0;
+		left: 0;
+		z-index: 1030
+	}
+	@media(max-width:800px){
+		.fixed-top-custom{
+			top: 10px;
+		}
+	}
+	#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный цвет */
+		display: none;
+		z-index: 979;
+	}
+	#overlay2 {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный цвет */
+		display: none;
+		z-index: 979;
+	}
+</style>
+<header id="header" class="header mt-2" style="z-index: 3002">
+	<nav class="navbar navbar-expand-xxl custom-header-container fixed-top fixed-top-custom">
+		<div class="container-fluid d-flex justify-content-between">
+		  <a class="navbar-brand d-flex align-items-center" href="/">
+			<p class="m-1 p-0">Караван <span class="font-logo-black"> Вкуса</span></p>
+		  </a>
+		  <button class="navbar-toggler button-navbar-custom" style="border:none;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 7C2.25 6.58579 2.58579 6.25 3 6.25H21C21.4142 6.25 21.75 6.58579 21.75 7C21.75 7.41421 21.4142 7.75 21 7.75H3C2.58579 7.75 2.25 7.41421 2.25 7Z" fill="white"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 12C2.25 11.5858 2.58579 11.25 3 11.25H21C21.4142 11.25 21.75 11.5858 21.75 12C21.75 12.4142 21.4142 12.75 21 12.75H3C2.58579 12.75 2.25 12.4142 2.25 12Z" fill="white"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 17C2.25 16.5858 2.58579 16.25 3 16.25H21C21.4142 16.25 21.75 16.5858 21.75 17C21.75 17.4142 21.4142 17.75 21 17.75H3C2.58579 17.75 2.25 17.4142 2.25 17Z" fill="white"/>
+			</svg>	
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+			<ul class="navbar-nav w-100 justify-content-center">
+			  <li class="nav-item">
+				<a class="nav-link" href="#advantages">Наши преимущества</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#catalog">Каталог</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#gallery">Галерея</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#contact">Контакты</a>
+			  </li>
+			</ul>
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<div class="d-flex align-items-center">
+					<a class="social-link text-white" href="tel: 89663570009" target="_blank"> +7 (966) 357-00-09</a>
+				</div>
+			  </li>
+			  <li class="nav-item">
+				<div class="d-flex align-items-center">
+					<a href="https://wa.me/79663570009" target="_blank">
+						<svg id="my-svg-tel" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						  <path id="path1" d="M0.23811 23.9383C0.103435 23.8636 0.00227693 23.6936 1.47015e-06 23.5382C-0.000913498 23.4757 0.425373 22.3169 0.947304 20.9632L1.89627 18.5018L1.74287 18.2374C1.4607 17.751 0.89826 16.5701 0.722866 16.0957C0.499497 15.4915 0.219131 14.3725 0.111413 13.6552C0.00684344 12.9589 -0.00942146 11.1556 0.0830519 10.5108C0.481544 7.73221 1.63132 5.38558 3.51974 3.49674C5.40619 1.60986 7.78259 0.441754 10.5087 0.0613207C11.0946 -0.0204402 12.9258 -0.0204402 13.5117 0.0613207C17.0223 0.551221 20.0075 2.38783 21.9525 5.2544C22.9831 6.77328 23.6111 8.40448 23.9129 10.3465C24.0181 11.0234 24.031 12.8696 23.935 13.5144C23.527 16.256 22.3415 18.6551 20.4808 20.505C17.5792 23.3897 13.4504 24.5886 9.40609 23.7209C8.38141 23.501 6.84403 22.8908 5.88698 22.3241L5.65237 22.1852L3.11862 23.0924C1.72505 23.5913 0.53207 23.9998 0.467553 24C0.403036 24.0002 0.299787 23.9725 0.23811 23.9383Z" fill="#3E3E3E"/>
+						  <path d="M17.1943 17.1744C16.8536 17.5112 16.5048 17.7262 16.0377 17.8873C15.6009 18.038 14.8201 18.078 14.3563 17.9735C13.2753 17.7299 11.6201 16.8716 10.2037 15.82C8.86541 14.8264 7.71319 13.3824 6.75392 11.4965C6.00955 10.0331 5.81203 9.09969 6.04989 8.16947C6.3114 7.14673 7.11789 6.30238 8.11253 6.00998C8.29317 5.95688 8.56119 5.93506 9.0329 5.93506C9.63938 5.93506 9.70961 5.94386 9.82455 6.0343C9.90433 6.09707 10.1607 6.54978 10.5223 7.26626L11.094 8.39899L11.0924 8.79791C11.0909 9.15458 11.0733 9.23413 10.9255 9.54891C10.8346 9.74256 10.6205 10.074 10.4498 10.2855L10.1395 10.67L10.3597 11.1091C10.9321 12.2508 11.7765 13.085 12.9452 13.6635L13.3408 13.8593L13.6097 13.6165C14.1773 13.1042 14.7424 12.8579 15.2713 12.8924C15.5792 12.9125 15.6699 12.9491 16.7258 13.4787C17.3452 13.7893 17.8942 14.0903 17.9458 14.1475C18.0286 14.2394 18.0414 14.3301 18.0547 14.9208C18.0687 15.5419 18.0609 15.6166 17.9457 15.9598C17.7834 16.4434 17.5466 16.8262 17.1943 17.1744Z" fill="#B6B6B6"/>
+						</svg>
+					</a>
+					<a href="https://t.me/+79663570009" target="_blank">
+						<svg id="my-svg-tg" width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path id="path2" d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#3E3E3E"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M5.43177 11.8735C8.93001 10.3493 11.2627 9.34452 12.4299 8.85905C15.7624 7.47294 16.4549 7.23216 16.9062 7.22421C17.0055 7.22246 17.2275 7.24706 17.3712 7.36372C17.4926 7.46223 17.526 7.5953 17.542 7.6887C17.558 7.78209 17.5779 7.99485 17.5621 8.1611C17.3815 10.0586 16.6001 14.6633 16.2026 16.7885C16.0343 17.6877 15.7031 17.9893 15.3825 18.0188C14.6856 18.0829 14.1564 17.5582 13.4815 17.1158C12.4253 16.4235 11.8287 15.9925 10.8035 15.3169C9.61871 14.5362 10.3868 14.1071 11.062 13.4058C11.2387 13.2222 14.309 10.4295 14.3685 10.1761C14.3759 10.1444 14.3828 10.0263 14.3126 9.96397C14.2425 9.90161 14.1389 9.92293 14.0642 9.93989C13.9583 9.96394 12.271 11.0791 9.00252 13.2855C8.52361 13.6143 8.08982 13.7746 7.70117 13.7662C7.2727 13.7569 6.44851 13.5239 5.83582 13.3247C5.08431 13.0805 4.48704 12.9513 4.53905 12.5364C4.56614 12.3203 4.86371 12.0993 5.43177 11.8735Z" fill="#B6B6B6"/>
+						</svg>
+					</a>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+</header>
+<div id="overlay"></div>
+
+  
+
+{% block content %}
+{% endblock %}
+
+
+<footer style="margin-top: 50px;">
+	<p class="text-center" style="color: #B6B6B6;">© 2023 ООО «МАКДОНЕР». Все права защищены</p>
+</footer>
+<a href="#" class="scroll-top d-md-flex align-items-center justify-content-center d-none">
+	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M18.6004 10.1003C18.3075 10.3932 17.8326 10.3932 17.5397 10.1003L12.0001 4.56066L6.46043 10.1003C6.16753 10.3932 5.69266 10.3932 5.39977 10.1003C5.10687 9.80744 5.10687 9.33256 5.39977 9.03967L11.4698 2.96967C11.6104 2.82902 11.8012 2.75 12.0001 2.75C12.199 2.75 12.3898 2.82902 12.5304 2.96967L18.6004 9.03967C18.8933 9.33256 18.8933 9.80744 18.6004 10.1003Z" fill="#B6B6B6"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.91992C12.4142 2.91992 12.75 3.25571 12.75 3.66992L12.75 20.4999C12.75 20.9141 12.4142 21.2499 12 21.2499C11.5858 21.2499 11.25 20.9141 11.25 20.4999L11.25 3.66992C11.25 3.25571 11.5858 2.91992 12 2.91992Z" fill="#B6B6B6"/>
+	</svg>
+
+	</a>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="mainFeedBackModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 440px;">
+		<div class="modal-content">
+			<div class="modal-header" style="border-bottom: none; padding: 20px 30px;">
+				<span style="font-weight: 500; font-size: 32px; line-height: 39px;">Контакты</span>
+                <button type="button" class="btn-close btn-close-white" style="opacity: 1; background-color: rgba(0,0,0,0) !important;" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+			</div>
+			<div class="modal-body test" style="padding: 0px 30px 30px 30px;">
+				<form id="form-modal" action="" method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="row row-cols-1">
+						<div class="col">
+							{{form.name}}
+						</div>
+						<div class="col">
+							{{form.phone}}
+						</div>
+						<div class="col">
+							{{form.question}}
+						</div>
+						
+						<div class="col success-send">
+                            <p>Заявка отправлена! <br>Мы скоро свяжемся с Вами</p>
+                        </div>
+						
+						<div id="call-btn">
+							<button type="submit" class="btn btn-primary w-100" role="button" aria-pressed="true">
+								<p style="color:white">Отправить заявку</p>
+							</button>
+						</div>
+					</div>
+				</form>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="{% static 'vendor/map/bundle-common.js' %}"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.3/tween.umd.js" integrity="sha512-T07MoUSqffM8IKU7WCC5DWiG56NPo4dcTuWbzbV2pJo5cUPfnteoFn2SEPgQgLpNAR7qdNyCONXz6oJG/YXMbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    glob_color = 'white';
+	glob_view = 'Снаружи'
+    opacity_body = false;
+
+	function changeColor(elm) {
+		params = document.querySelectorAll(".colors span")
+		params.forEach(element => element.classList.remove("active-color"));
+		elm.classList.add("active-color");
+		glob_color = elm.style.backgroundColor
+		if(glob_color == 'red')
+		{
+			$("#color-control").text("Цвет: красный")
+		}
+		else if (glob_color == 'yellow')
+		{
+			$("#color-control").text("Цвет: желтый")
+		}
+		else if (glob_color == 'purple')
+		{
+			$("#color-control").text("Цвет: фиолетовый")
+		}
+		else if (glob_color == 'black')
+		{
+			$("#color-control").text("Цвет: чёрный")
+		}
+		else if (glob_color == 'white')
+		{
+			$("#color-control").text("Цвет: белый")
+		}
+		else if (glob_color == 'blue')
+		{
+			$("#color-control").text("Цвет: синий")
+		}
+		scene.traverse((node)=>{
+			if (!node.isMesh) return;
+			let clonedMaterial = node.material.clone();
+			node.material = clonedMaterial;
+			
+			if (glob_color == 'red')
+			{
+				for (var i = 0; i < color_truck_obj.length; i++){
+					if (node.name === color_truck_obj[i]){
+						node.material.color = clonedMaterial.color						
+						node.material.color = {r:0.6265, g:0.1867, b:0.1867};
+					}
+				}
+			}
+            
+            else if (glob_color == 'yellow')
+			{
+				for (var i = 0; i < color_truck_obj.length; i++){
+					if (node.name === color_truck_obj[i]){
+						node.material.color = clonedMaterial.color
+						node.material.color = {r:0.5, g:0.5, b:0}
+					}
+				}
+			}
+
+            else if (glob_color == 'purple')
+			{
+				for (var i = 0; i < color_truck_obj.length; i++){
+					if (node.name === color_truck_obj[i]){
+						node.material.color = clonedMaterial.color
+						node.material.color = {r:0.3927, g:0.2145, b:0.3927}
+					}
+				}
+			}
+
+            else if (glob_color == 'black')
+			{
+			
+				for (var i = 0; i < color_truck_obj.length; i++){
+					if (node.name === color_truck_obj[i]){
+						node.material.color = clonedMaterial.color
+						node.material.color = {r:0.25, g:0.25, b:0.25}
+					}
+				}
+			}
+			
+			else if (glob_color == 'white')
+			{
+				for (var i = 0; i < color_truck_obj.length; i++){
+					if (node.name === color_truck_obj[i]){
+						node.material.color = clonedMaterial.color
+						node.material.color = {r:0.75, g:0.75, b:0.75}
+					}
+				}	
+			}
+			
+			else if (glob_color == 'blue')
+			{
+			
+				for (var i = 0; i < color_truck_obj.length; i++){
+					if (node.name === color_truck_obj[i]){
+						node.material.color = clonedMaterial.color
+						node.material.color = {r:0.2222, g:0.2222, b:0.5556}
+					}
+				}	
+			}
+		})
+	}
+	
+	function changeView(elm) {
+		params = document.querySelectorAll("#catalog .wrapper label")
+		params.forEach(function(element) {
+			if (element === elm) {element.setAttribute('id', 'active-label')}
+			else {element.removeAttribute('id');}
+		});
+		opacity_body = true;
+		glob_view = elm.innerHTML
+	}
+	//Функция активации анимации для Внутри-Снаружи
+	const action_View = () =>{
+		scene.traverse((node)=>{
+			if (!node.isMesh) return;
+			let clonedMaterial = node.material.clone();
+			node.material = clonedMaterial;
+			
+			if (glob_view === 'Внутри') {
+				if (camera.position.y < 3){camera.position.y += .0001;};
+				if (camera.rotation.x > -.2){camera.rotation.x -= .0000151515;};
+				if (ellipse.position.y > -.5){ellipse.position.y -= .0000378788;};
+				if (opecity_proc > 0.1){opecity_proc -= .00009};
+				if (ellipse.position.z > -.8){ellipse.position.z -= .0000606061};
+				if (textMesh.position.y > -.1){textMesh.position.z += .00002};
+				if (rectangle2.position.y > .84){rectangle2.position.z += .00002};
+				for (var i = 0; i < concat_truck.length; i++){
+					if (node.name !== "effict"){
+						if (node.name === concat_truck[i]){
+							if (concat_truck[i] === 'mesh_44' || concat_truck[i] === 'mesh_82' || concat_truck[i] === 'mesh_82_1' || concat_truck[i] === 'wall') {
+								clonedMaterial.opacity = opecity_proc;
+							}
+							else {
+								clonedMaterial.opacity = opecity_proc-.1;
+							}	
+							clonedMaterial.transparent = true;
+						}
+					}
+					
+				}
+				if (ellipse.position.z <= -.8){
+					opacity_body = false
+				}
+			}
+			else {
+				if (camera.position.y > 1.62){camera.position.y -= .0001;};
+				if (camera.rotation.x < 0){camera.rotation.x += .0000151515;};
+				if (ellipse.position.y < 0){ellipse.position.y += .0000378788;};
+				if (ellipse.position.x > 0){ellipse.position.x -= .0000606061};
+				if (ellipse.position.z < 0){ellipse.position.z += .0000606061};
+				if (opecity_proc < 1){opecity_proc += .00009};
+				if (textMesh.position.y < 0.02){textMesh.position.z -= .00002};
+				if (rectangle2.position.y < .98){rectangle2.position.z -= .00002};
+				for (var i = 0; i < concat_truck.length; i++){
+					if (node.name !== 'glass' || node.name !== "effict") {
+						clonedMaterial.opacity = opecity_proc;
+						if (clonedMaterial.opacity > 1){
+							clonedMaterial.transparent = false;
+						};
+					}
+				}
+				if (node.name === 'glass' || node.name === "effict"){
+					clonedMaterial.opacity = 0.3;
+					clonedMaterial.transparent = true;
+					if (animate_run_stop && node.name === "effict"){
+						clonedMaterial.opacity = 0;
+					}
+				}
+				if (ellipse.position.z >= 0){
+					opacity_body = false
+				}
+			}
+		});
+	}
+	
+    var ActMouse = 0;
+	var LastOff = 0;
+	const container = document.getElementById('canvas-container');
+	
+	
+	scene = new THREE.Scene();
+	// Решение проблемы для мобилки это просто нужно было поставить константные соотнашения сторон
+	
+	camera = new THREE.PerspectiveCamera(30, 1498 / 803 , 0.1, 1000);
+	
+	// Изменение позиции камеры по оси Y
+	camera.position.set(-0.25, 1.62, 10);
+	
+	renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
+	var newWidth = 1800; // Новая ширина
+	var newHeight = 1200; // Новая высота
+	renderer.setSize(newWidth, newHeight);
+	if (window.outerWidth < 750){
+		renderer.domElement.setAttribute("class", "col-4 themed-grid-col h-100 canvas-model-style");
+	}
+	else{
+		renderer.domElement.setAttribute("class", "col-4 themed-grid-col h-100 w-100");
+	}
+    
+	renderer.setClearColor(0x1D1D1D, 1);
+	
+	renderer.domElement.setAttribute("id", "3DObj");
+	container.appendChild(renderer.domElement);
+    const popups = document.getElementById("popups");
+    const communicate = document.getElementById("communicate");
+	
+    // Создание эллипса
+    const curve = new THREE.EllipseCurve(
+      0, 0,    // x, y координаты центра эллипса
+      3.7, 3.7,    // радиусы по осям X и Y
+      0, 2 * Math.PI,  // начальный и конечный углы
+      false,   // по часовой стрелке
+      0        // поворот
+    );
+
+    const points2 = curve.getPoints(250);
+    const geometry2 = new THREE.BufferGeometry().setFromPoints(points2);
+
+    // Создаем материал с пунктирными линиями
+    const material2 = new THREE.LineDashedMaterial({
+        color: 0xffffff,
+        dashSize: 0.1, // Длина отрезка пунктира
+        gapSize: 0.05 // Длина разрыва между отрезками пунктира
+    });
+
+    const ellipse = new THREE.Line(geometry2, material2);
+    ellipse.computeLineDistances();
+    ellipse.rotation.x = Math.PI / 2;
+	
+    scene.add(ellipse);
+
+
+
+    // Позиционирование камеры
+
+    const Polight = new THREE.PointLight( 0xffffff, 1, 100 );
+	Polight.position.set( 50, 50, 50 );
+	scene.add( Polight );
+	
+    var light1 = new THREE.DirectionalLight(0xF7F7FF);
+    light1.position.set(20, 0, 70);
+    //scene.add(light1);
+    var light2 = new THREE.DirectionalLight(0xF7F7FF);
+    light2.position.set(0, 100, 0);
+    //scene.add(light2);
+    var light3 = new THREE.DirectionalLight(0xF7F7FF);
+    light3.position.set(-200, 0, 30);scene.add(light3);
+    //scene.add(light3);
+	
+	function ringGeometry() {
+		var ringGeometry;
+		if (window.outerWidth < 800){
+			ringGeometry = new THREE.RingGeometry(0.7, 0.95, 32);
+		}else{
+			ringGeometry = new THREE.RingGeometry(0.3, 0.95, 36);
+		}
+		const ringMaterial = new THREE.MeshBasicMaterial({
+		  color: 0xFF7400,
+		  side: THREE.DoubleSide,
+		  opacity: 0.4,
+		  transparent: true,
+		});
+		const ring = new THREE.Mesh(ringGeometry, ringMaterial);
+		ring.scale.set(0.15, 0.15, 0.15);
+  
+		return ring;
+	}
+
+    points_coordinates = [
+        { "description" : "<span>Внешняя подсветка, 2<br> светоиодные ленты на 12B, с влагозащитой IP65 </span>", "name": "<p>Освещение</p>", "x" : 1.22, "y" : 1.7, "z" : -2, "rotationy" : Math.PI / 2, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Подвеска фирмы AL-KO (Германия) на 2000кг<br>Масса трака - 950кг</span>", "name": "<p>Оси</p>", "x" : 1.27, "y" : .26, "z" : .39, "rotationy" : Math.PI / 2, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Раздвижное аллюминиевое,<br>слайдер - три створки</span>", "name": "<p>Окно</p>", "x" : 1.02, "y" : 1.26, "z" : 1.39, "rotationy" : Math.PI / 2, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>ПТС и документы,<br>оформленные на Вас</span>", "name": "<p>Документы</p>", "x" : 0, "y" : .64, "z" : -3.02, "rotationy" : Math.PI, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Замковое сцепное.<br>Устройство и выдвижное опорное колесо AL-KO с нагрузкой на дышало 500кг</span>", "name": "<p>Сцепное</p>", "x" : 0, "y" : .661, "z" : 3.90, "rotationy" : -Math.PI/2, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Вытяжной короб с защитой<br>от осадков и жаростойким<br>вентилиятором на 900м3</span>", "name": "<p>Вытяжка</p>", "x" : -0.99, "y" : 2.66, "z" : .2, "rotationy" : -Math.PI/2, "rotationx" : -Math.PI/2, "rotationz" : Math.PI},
+        { "description" : "<span>Раковина с холодной и горячей водой,<br>два бака на 50л</span>", "name": "<p>Водоснабжение</p>", "x" : -0.7, "y" : 1.8, "z" : 1.8, "rotationy" : 0, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Столы из пищевой<br>нержавеющей стали</span>", "name": "<p>Рабочие столы</p>", "x" : 0.7, "y" : 1.7, "z" : 2.2, "rotationy" : 0, "rotationx" : -Math.PI/2, "rotationz" : 0},
+        { "description" : "<span>Сервировочная полка с бортиками<br>над окном, во всю ширину</span>", "name": "<p>Полка</p>", "x" : 1, "y" : 2.4, "z" : 1.2, "rotationy" : Math.PI / 2, "rotationx" : Math.PI / 2, "rotationz" : 0},
+        { "description" : "<span>14 влагостойких розеток<br>по всему периметру трака,<br>защита IP55</span>", "name": "<p>Электроснабжение</p>", "x" : -1.05, "y" : 1.8, "z" : 1.07, "rotationy" : Math.PI / 2, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Холодильное оборудование на 150л<br>с температурным режимом от +1 до +10 градусов</span>", "name": "<p>Холодильник</p>", "x" : .32, "y" : .9, "z" : .4, "rotationy" : -Math.PI/2, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Устанавливается опционально</span>", "name": "<p>Теплый пол</p>", "x" : .0, "y" : .8, "z" : .0, "rotationy" : 0, "rotationx" : 0, "rotationz" : 0},
+        { "description" : "<span>Пищевая сталь, пенопласт или стекловолокно</span>", "name": "<p>Утеплитель</p>", "x" : -1.1, "y" : 1.95, "z" : -.57, "rotationy" : Math.PI/2, "rotationx" : 0, "rotationz" : 0},
+    ]
+
+    var arr_circle = []
+    var arr_effict = []
+	var circleGeometry;
+	if (window.outerWidth < 800){
+		circleGeometry = new THREE.CircleGeometry(0.12, 32 );
+	}else{
+		circleGeometry = new THREE.CircleGeometry(0.08, 32 );
+	}
+	var tweens = [];
+	function createPulsatingEffect(a) {
+		for (var i = 0; i < arr_effict.length; i++ ) {
+			var scaleTween = new TWEEN.Tween(arr_effict[i].scale)
+				.to(new THREE.Vector3(a, a, a), 1000) // Adjust the duration (e.g., 1000 milliseconds)
+				.easing(TWEEN.Easing.Sinusoidal.InOut) // Use a sinusoidal easing function for wave-like motion
+				.repeat(Infinity)
+				.yoyo(true) // Reverse the animation for smooth back-and-forth motion
+				.start();
+
+			var opacityTween = new TWEEN.Tween(arr_effict[i].material)
+				.to({ opacity: 0 }, 1000) // Adjust the duration (e.g., 1000 milliseconds)
+				.easing(TWEEN.Easing.Sinusoidal.InOut) // Use a sinusoidal easing function for wave-like opacity change
+				.repeat(Infinity)
+				.yoyo(true) // Reverse the animation for smooth back-and-forth opacity change
+				.start();
+
+			tweens.push(scaleTween, opacityTween);
+		}
+	}
+	var animate_run_stop = false;
+	function stopPulsatingEffect() {
+		for (var i = 0; i < tweens.length; i++){
+			if(tweens[i] !== null){
+				tweens[i].stop();
+				tweens[i] = null;
+			}
+		}
+		ellipse.traverse(function(object) {
+			if (object.name == "effict") {
+				object.material.opacity = 0;
+			}
+		});
+		animate_run = true;
+	}
+    const addPointModel = (model) =>{
+        for (var i = 0; i < points_coordinates.length; i++){
+			const circleMaterial = new THREE.MeshBasicMaterial({ color: 0xFF6913, side: THREE.DoubleSide });
+
+			const circle = new THREE.Mesh(circleGeometry, circleMaterial);
+			const effict = ringGeometry()
+			
+            circle.position.y = points_coordinates[i].y; 
+            circle.position.x = points_coordinates[i].x; 
+            circle.position.z = points_coordinates[i].z;
+            circle.name = points_coordinates[i].name;
+            circle.description = points_coordinates[i].description;
+            circle.rotation.y = points_coordinates[i].rotationy;
+            circle.rotation.x = points_coordinates[i].rotationx;
+            circle.rotation.z = points_coordinates[i].rotationz;
+
+			effict.position.y = points_coordinates[i].y; 
+            effict.position.x = points_coordinates[i].x; 
+            effict.position.z = points_coordinates[i].z;
+            effict.rotation.y = points_coordinates[i].rotationy;
+            effict.rotation.x = points_coordinates[i].rotationx;
+            effict.rotation.z = points_coordinates[i].rotationz;
+			effict.name = "effict";
+			
+			arr_effict.push(effict);
+            arr_circle.push(circle);
+            model.scene.add(circle,effict);
+        }
+    }
+
+	const addPointLight = function (scene, color, x, y, z) {
+		const directLight = new THREE.DirectionalLight(color);
+		const pointLight = new THREE.PointLight(color);
+		directLight.position.set(x, y, z);
+		pointLight.position.set(x, y, z);
+		directLight.intensity = 0.3;
+		pointLight.intensity = 0.3;
+		directLight.add(new THREE.Mesh(
+				new THREE.SphereGeometry(1, 10, 10),
+				new THREE.MeshBasicMaterial({
+					color: color
+				})));
+		pointLight.add(new THREE.Mesh(
+				new THREE.SphereGeometry(1, 10, 10),
+				new THREE.MeshBasicMaterial({
+					color: color
+				})));
+		scene.add(directLight);
+		scene.add(pointLight)
+	};
+
+	addPointLight(scene, 0xefebe2, 30, 0, 0),
+	addPointLight(scene, 0xefebe2, 0, 30, 0),
+	addPointLight(scene, 0xefebe2, 0, 0, 30);
+	
+	var roundedRectShape = new THREE.Shape();
+    var x = -3;
+    var y = -1;
+    var width = 0.6;
+    var height = .18;
+    var radius = 0.11;
+
+    roundedRectShape.moveTo(x, y + radius);
+    roundedRectShape.lineTo(x, y + height - radius);
+    roundedRectShape.quadraticCurveTo(x, y + height, x + radius, y + height);
+    roundedRectShape.lineTo(x + width - radius, y + height);
+    roundedRectShape.quadraticCurveTo(x + width, y + height, x + width, y + height - radius);
+    roundedRectShape.lineTo(x + width, y + radius);
+    roundedRectShape.quadraticCurveTo(x + width, y, x + width - radius, y);
+    roundedRectShape.lineTo(x + radius, y);
+    roundedRectShape.quadraticCurveTo(x, y, x, y + radius);
+
+    var geometry = new THREE.ShapeGeometry(roundedRectShape);
+    var material = new THREE.MeshBasicMaterial({ color: 0xFF6913 });
+    let rectangle2 = new THREE.Mesh(geometry, material);
+	rectangle2.position.set(2.7,.94,3.7)
+    scene.add(rectangle2);
+	let textMesh;
+    // Создаем текст
+    var loader2 = new THREE.FontLoader();
+    loader2.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function(font) {
+      var textGeometry = new THREE.TextGeometry('', {
+        font: font,
+        size: 0.4,
+        height: 0.1,
+      });
+      var textMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      textMesh = new THREE.Mesh(textGeometry, textMaterial);
+      textMesh.position.set(-.273,0,3.7);
+      scene.add(textMesh);
+
+      // Функция для изменения текста
+      function changeText(newText) {
+        textGeometry.dispose(); // Освобождаем предыдущую геометрию текста
+        textGeometry = new THREE.TextGeometry(newText, { // Создаем новую геометрию с новым текстом
+          font: font,
+          size: 0.07,
+          height: 0.01,
+        });
+        textMesh.geometry = textGeometry; // Обновляем геометрию текста
+      }
+
+      // Пример изменения текста каждые 2 секунды
+      setInterval(function() {
+		var num_rol = String((ellipse.rotation.z*100+ 360).toFixed(0))
+		var randomText;
+		if (num_rol.length === 3){
+			randomText = "<     " + num_rol + "     >";
+		}
+		if (num_rol.length === 2){
+			randomText = "<      " + num_rol + "      >";
+		}
+		if (num_rol.length === 1){
+			randomText = "<       " + num_rol + "       >";
+		}
+        
+        changeText(randomText);
+      }, 2);
+    });
+
+    let loader = new THREE.GLTFLoader();
+	
+	let dracoLoader = new THREE.DRACOLoader();
+	dracoLoader.setDecoderPath('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/libs/draco/');
+	loader.setDRACOLoader(dracoLoader);
+	let obj = null;
+    loader.load("{% static '3d/FoodTruck_Finale.gltf' %}", function(gltf) {
+		gltf.scene.traverse((node)=>{
+			if (node.isMesh){
+				if (node.name === "glass"){
+					const glassMaterial = new THREE.MeshStandardMaterial({
+						color: 0xffffff,
+						metalness: 0.0,
+						roughness: 0.2,
+						transparent: true,
+						opacity: 0.5,
+					});
+					glassMaterial.envMapIntensity = 1.0;
+					glassMaterial.refractionRatio = 0.98;
+					node.material = glassMaterial;
+				};
+			};
+		});
+		
+		let obj = gltf;
+		// Измение цвета в первый раз на белый
+		obj.scene.traverse((node)=>{
+			if (!node.isMesh) return;
+			let clonedMaterial = node.material.clone();
+			node.material = clonedMaterial;
+			for (var i = 0; i < color_truck_obj.length; i++){
+				if (node.name === color_truck_obj[i]){
+					node.material.color = clonedMaterial.color
+					node.material.color = {r:0.75, g:0.75, b:0.75}
+				}
+			}
+		})
+        addPointModel(obj)
+		// Изменино соотнащение по оси Y уменьшино
+		obj.scene.scale.set(1.3, 1.1, 1.3);
+		obj.scene.rotation.y = 4.1;
+		obj.scene.position.z = 0.3;
+		obj.scene.rotation.x = -Math.PI / 2;
+		ellipse.add(obj.scene);
+		var a;
+		if (window.outerWidth < 800){
+			a = .32;
+		}else{
+			a = .12;
+		}
+		createPulsatingEffect(a)
+	});
+
+    container.addEventListener('mousemove', onMouseMove, false);
+	// Касания точек добавлено для телефона
+    container.addEventListener('touchstart', onMouseMov, false);
+	
+	
+
+	let isDragging = false;
+	let rectangle = null;
+	let point_object_uuid = null;
+	var canvas = document.getElementById('3DObj');
+	
+	function onMouseMove(event) {
+	  	var canvasBounds = renderer.domElement.getBoundingClientRect();
+	  	// Получаем координаты курсора
+	  	const mouseX = ((event.clientX - canvasBounds.left) / canvasBounds.width) * 2 - 1;
+	  	const mouseY = -((event.clientY - canvasBounds.top) / canvasBounds.height) * 2 + 1;
+	  	// Создаем вектор из координат курсора
+	  	const vector = new THREE.Vector3(mouseX, mouseY, 0.5);
+	  	vector.unproject(camera);
+	  	x_point = event.offsetX;
+	  	y_point = event.offsetY;
+	  	// Создаем луч для определения пересечения с точками
+	  	const raycaster = new THREE.Raycaster(camera.position, vector.sub(camera.position).normalize());
+		
+	  	// Проверяем пересечение луча с точками
+	  	const intersects = raycaster.intersectObjects(arr_circle,true);
+		
+	  	// Если есть пересечение, меняем курсор на указатель (pointer)
+	  	if (intersects.length > 0) {
+			canvas.style.cursor = 'pointer';
+			if (point_object_uuid === null){
+				point_object_uuid = intersects[0].object.uuid
+				const intersect = intersects[0];
+				const position = intersect.point;
+				stopPulsatingEffect()
+				popups.style.display = "block"
+				if (window.outerWidth > 959){
+					popups.style.top = y_point + 20 + 'px';
+					popups.style.left = x_point + 20 + 'px';
+					popups.innerHTML = `${intersect.object.name}${intersect.object.description}`;
+					rectangle = 1
+					communicate.style.display = "block"
+					communicate.style.top = y_point + 'px';
+					communicate.style.left = x_point + 'px';
+					communicate.style.width = (document.getElementById('popups').getBoundingClientRect().width / 1.5) + 'px'
+				}
+				if (window.outerWidth < 960){
+					popups.style.left = '0';
+					popups.style.bottom = '0';
+					rectangle = 1
+					popups.style.weight = "100%"; 
+					popups.innerHTML = `<div onclick="close_model_point()" class="d-flex align-items-center justify-content-center"><svg width="32" height="3" viewBox="0 0 32 3" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="3" rx="1.5" fill="#3E3E3E"/></svg></div>${intersect.object.name}${intersect.object.description}<button class="popups-button" onclick="close_model_point()">закрыть</button>`;
+					$('#popups').parent().css('z-index', 900);
+				}
+				isDragging = false
+			}else{
+				if(point_object_uuid === intersects[0].object.uuid){
+					if (popups.style.display === "none"){
+						point_object_uuid = intersects[0].object.uuid
+						const intersect = intersects[0];
+						const position = intersect.point;
+						stopPulsatingEffect()
+						popups.style.display = "block"
+						if (window.outerWidth > 959){
+							popups.style.top = y_point + 20 + 'px';
+							popups.style.left = x_point + 20 + 'px';
+							popups.innerHTML = `${intersect.object.name}${intersect.object.description}`;
+							rectangle = 1
+							communicate.style.display = "block"
+							communicate.style.top = y_point + 'px';
+							communicate.style.left = x_point + 'px';
+							communicate.style.width = (document.getElementById('popups').getBoundingClientRect().width / 1.5) + 'px'
+						}
+						if (window.outerWidth < 960){
+							popups.style.left = '0';
+							popups.style.bottom = '0';
+							rectangle = 1
+							popups.style.weight = "100%"; 
+							popups.innerHTML = `<div onclick="close_model_point()" class="d-flex align-items-center justify-content-center"><svg width="32" height="3" viewBox="0 0 32 3" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="3" rx="1.5" fill="#3E3E3E"/></svg></div>${intersect.object.name}${intersect.object.description}<button class="popups-button" onclick="close_model_point()">закрыть</button>`;
+							$('#popups').parent().css('z-index', 900);
+						}
+						isDragging = false
+					}
+				}else{
+					point_object_uuid = intersects[0].object.uuid
+					const intersect = intersects[0];
+					const position = intersect.point;
+					stopPulsatingEffect()
+					popups.style.display = "block"
+					if (window.outerWidth > 959){
+						popups.style.top = y_point + 20 + 'px';
+						popups.style.left = x_point + 20 + 'px';
+						popups.innerHTML = `${intersect.object.name}${intersect.object.description}`;
+						rectangle = 1
+						communicate.style.display = "block"
+						communicate.style.top = y_point + 'px';
+						communicate.style.left = x_point + 'px';
+						communicate.style.width = (document.getElementById('popups').getBoundingClientRect().width / 1.5) + 'px'
+					}
+					if (window.outerWidth < 960){
+						popups.style.left = '0';
+						popups.style.bottom = '0';
+						rectangle = 1
+						popups.style.weight = "100%"; 
+						popups.innerHTML = `<div onclick="close_model_point()" class="d-flex align-items-center justify-content-center"><svg width="32" height="3" viewBox="0 0 32 3" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="3" rx="1.5" fill="#3E3E3E"/></svg></div>${intersect.object.name}${intersect.object.description}<button class="popups-button" onclick="close_model_point()">закрыть</button>`;
+						$('#popups').parent().css('z-index', 900);
+					}
+					isDragging = false
+				}
+			}
+			console.log(intersects[0])
+				
+		}else{
+			popups.style.display = "none"
+			communicate.style.display = "none"
+			rectangle = null
+			popups.style.display = "none"
+			communicate.style.display = "none"
+			$('#popups').parent().css('z-index', 1);
+	    	$('.button-model').parent().css('z-index', 800);
+			canvas.style.cursor = 'default';
+		}
+	}
+
+	function onMouseMov(event){
+		var rect = renderer.domElement.getBoundingClientRect();
+
+      x_point = event.offsetX;
+      y_point = event.offsetY;
+
+      raycaster.setFromCamera(mouse, camera);
+      const intersects = raycaster.intersectObjects(arr_circle);
+
+
+      if (intersects.length > 0) {
+        if (rectangle == null){
+          const intersect = intersects[0];
+          const position = intersect.point;
+		  stopPulsatingEffect()
+          popups.style.display = "block"
+		  if (window.outerWidth > 959){
+			popups.style.top = y_point + 20 + 'px';
+			popups.style.left = x_point + 20 + 'px';
+			popups.innerHTML = `${intersect.object.name}${intersect.object.description}`;
+		  	rectangle = 1
+		  	communicate.style.display = "block"
+          	communicate.style.top = y_point + 'px';
+          	communicate.style.left = x_point + 'px';
+		  	communicate.style.width = (document.getElementById('popups').getBoundingClientRect().width / 1.5) + 'px'
+		  }
+		  if (window.outerWidth < 960){
+          	popups.style.left = '0';
+          	popups.style.bottom = '0';
+			rectangle = 1
+			popups.style.weight = "100%"; 
+			popups.innerHTML = `<div onclick="close_model_point()" class="d-flex align-items-center justify-content-center"><svg width="32" height="3" viewBox="0 0 32 3" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="3" rx="1.5" fill="#3E3E3E"/></svg></div>${intersect.object.name}${intersect.object.description}<button class="popups-button" onclick="close_model_point()">закрыть</button>`;
+			$('#popups').parent().css('z-index', 900);
+			$('#overlay2').css('display', "block");
+		  }
+		  isDragging = false
+
+        }
+      } else {
+        if (rectangle) {
+            popups.style.display = "none"
+            communicate.style.display = "none"
+			rectangle = null
+			$('#popups').parent().css('z-index', 1);
+			$('.button-model').parent().css('z-index', 800);
+			$('#overlay2').css('display', "none");
+        }
+      }
+  	}
+
+
+    // Добавление вращения при касании области эллипса
+    let previousMousePosition = { x: 0, y: 0 };
+    const raycaster = new THREE.Raycaster();
+    const mouse = new THREE.Vector2();
+	// Добавлен скролл для телефона
+	renderer.domElement.addEventListener('touchstart', (event) => {
+		event.preventDefault();
+		const rect = renderer.domElement.getBoundingClientRect();
+		const x = event.touches[0].clientX - rect.left;
+		const y = event.touches[0].clientY - rect.top;
+		mouse.x = (x / renderer.domElement.clientWidth) * 2 - 1;
+		mouse.y = -(y / renderer.domElement.clientHeight) * 2 + 1;
+		raycaster.setFromCamera(mouse, camera);
+		const intersects = raycaster.intersectObject(ellipse);
+	
+		if (intersects.length > 0) {
+			isDragging = true;
+			previousMousePosition = { x: event.touches[0].clientX, y: event.touches[0].clientY };
+		}
+	});
+	
+	renderer.domElement.addEventListener('touchmove', (event) => {
+		if (!isDragging) return;
+		const rect = renderer.domElement.getBoundingClientRect();
+		const x = event.touches[0].clientX - rect.left;
+		const y = event.touches[0].clientY - rect.top;
+		mouse.x = (x / renderer.domElement.clientWidth) * 2 - 1;
+		mouse.y = -(y / renderer.domElement.clientHeight) * 2 + 1;
+		const intersects = raycaster.intersectObject(ellipse);
+		if (intersects.length > 0) {
+			const deltaMove = {
+				x: event.touches[0].clientX - previousMousePosition.x,
+				y: event.touches[0].clientY - previousMousePosition.y
+			};
+	
+			const deltaRotationQuaternion = new THREE.Quaternion()
+				.setFromEuler(new THREE.Euler(
+					0,
+					toRadians(deltaMove.x * 1),
+					0,
+					'XYZ'
+				));
+			ellipse.quaternion.multiplyQuaternions(deltaRotationQuaternion, ellipse.quaternion);
+			previousMousePosition = { x: event.touches[0].clientX, y: event.touches[0].clientY };
+		}
+	});
+	
+	renderer.domElement.addEventListener('touchend', (event) => {
+		isDragging = false;
+	});
+
+    renderer.domElement.addEventListener('mousedown', (event) => {
+        event.preventDefault();
+        const rect = renderer.domElement.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        mouse.x = (x / renderer.domElement.clientWidth) * 2 - 1;
+        mouse.y = -(y / renderer.domElement.clientHeight) * 2 + 1;
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObject(ellipse);
+		
+        if (intersects.length > 0 ) {
+            isDragging = true;
+            previousMousePosition = { x: event.clientX, y: event.clientY };
+        }
+    });
+	
+    renderer.domElement.addEventListener('mousemove', (event) => {
+        if (!isDragging) return;
+        const rect = renderer.domElement.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        mouse.x = (x / renderer.domElement.clientWidth) * 2 - 1;
+        mouse.y = -(y / renderer.domElement.clientHeight) * 2 + 1;
+        const intersects = raycaster.intersectObject(ellipse);
+        if (intersects.length > 0) {
+            const deltaMove = {
+                x: event.clientX - previousMousePosition.x,
+                y: event.clientY - previousMousePosition.y
+            };
+			
+
+            const deltaRotationQuaternion = new THREE.Quaternion()
+                .setFromEuler(new THREE.Euler(
+                    0,
+                    toRadians(deltaMove.x * 1),
+                    0,
+                    'XYZ'
+                ));
+            ellipse.quaternion.multiplyQuaternions(deltaRotationQuaternion, ellipse.quaternion);
+            previousMousePosition = { x: event.clientX, y: event.clientY };
+        }
+    });
+    renderer.domElement.addEventListener('mouseup', (event) => {
+        isDragging = false;
+    });
+
+    // Функция для преобразования градусов в радианы
+    function toRadians(degrees) {
+        return degrees * Math.PI / 180;
+    }
+	
+	var color_truck_obj = ['mesh_15', 'mesh_15_1', 'logo_fast_2', 'visor', 'logo_fast_1', 'sticker', 
+						   'lights_big', 'lights_small', 'lights_big_frame_2', 'lights_big_frame_1', 
+						   'mesh_44', 'mesh_82', 'mesh_82_1', 'glass', 'ventilation_pipe', 'wall']
+	var truck_frame = ['text_capsula', 'frame', 'door', 'seams_2', 'seams_3', 'logo_fast_bolts',
+				       'lights_big_glass_2', 'lights_big_glass_1', 'lights_red_circle', 'Cube019',
+				       'Cube', 'Cube002', 'Cube003', 'Cylinder008']
+	var concat_truck = color_truck_obj.concat(truck_frame)
+	
+	let opecity_proc = 1;
+
+    function animate() {
+        requestAnimationFrame(animate);
+		if (opacity_body === true){
+			action_View()
+			
+		}
+        renderer.render(scene, camera);
+		TWEEN.update();
+    }
+    animate();
+</script>
+
+
+
+<script src="https://unpkg.com/imask"></script>
+<script>
+var phoneMask = IMask(
+    document.querySelectorAll('.tel')[0], {
+        mask: '+{7} (000) 000-00-00'
+});
+
+var phoneMask_modal = IMask(
+	document.querySelectorAll('.tel')[1], {
+        mask: '+{7} (000) 000-00-00'
+});
+$('.tel').on('input', function() {
+	validatePhoneNumber($(this).val(),$(this));
+});
+function validatePhoneNumber(phoneNumber, phone_input) {
+	var regex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+	var isValid = regex.test(phoneNumber);
+
+	if (isValid) {
+		phone_input.removeClass("is-invalid");
+	} else {
+		phone_input.addClass("is-invalid")
+	}
+}
+</script>
+
+<script>
+$('#mainFeedBackModal').on('show.bs.modal', function (e) {
+	$('body').addClass('rm-p');
+	$('header').addClass('rm-p');
+});
+
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true,
+  'showImageNumberLabel': false,
+})
+
+$('#mainFeedBackModal').on('hide.bs.modal', function( ) {
+	document.querySelectorAll("#form-modal .success-send")[0].style.cssText = 'margin-top: 0; visibility: hidden; max-height: 0; opacity: 0;';
+	//document.querySelectorAll("#form-fb input")[1].value = ''
+	//document.querySelectorAll("#form-fb input")[2].value = ''
+});
+$(window).scroll(function() {
+	var top = $('.text-about-detect-of-button').offset().top,
+		sctop = $(this).scrollTop(),
+		winh = $(this).height(),
+		footer = $('#form-buttom').offset().top,
+		y = top - sctop - winh;
+  
+	if (y > 0 || -y > winh) {
+	  if (sctop + winh >= footer) {
+		if ($('.button-model').hasClass('fixed-bottom')) {
+		  $('.button-model').removeClass('fixed-bottom').fadeOut(40, function() {
+			$(this).removeAttr('style');
+		  });
+		}
+	  } else {
+		if (!$('.button-model').hasClass('fixed-bottom')) {
+		  $('.button-model').addClass('fixed-bottom').css('display', 'none').fadeIn(500);
+		} else {
+		  $('.button-model').css('display', 'block');
+		}
+	  }
+  
+	  $('.button-model').removeClass('w-100');
+	  $('.button-model').css('left', '10%');
+	  $('.button-model').parent().css('z-index', 800);
+	} else {
+	  if ($('.button-model').hasClass('fixed-bottom')) {
+		$('.button-model').removeClass('fixed-bottom').fadeOut(40, function() {
+		  $(this).removeAttr('style');
+		});
+	  }
+  
+	  $('.button-model').addClass('w-100');
+	  $('.button-model').css('margin-left', '-5%');
+	  $('.button-model').parent().css('z-index', 1);
+	}
+});
+  
+  
+
+
+$('#form-consult').on('submit', function( event ) {
+    event.preventDefault()	
+	var form_param = document.querySelectorAll("#form-consult input")
+
+    $.ajax({
+      data: {
+        name:form_param[1].value,
+        phone:form_param[2].value, 
+		question:document.getElementById("question").value,
+        csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+      },
+      type: $(this).attr('method'),
+      datatype: 'json',
+      url:'{% url "fb" %}',
+    })	
+	document.querySelectorAll("#form-consult input")[1].value = ''
+	document.querySelectorAll("#form-consult input")[2].value = ''
+	document.getElementById("question").value = ''
+	console.log(document.querySelectorAll("#form-consult .success-send")[0])
+	document.querySelectorAll("#form-consult .success-send")[0].style.cssText = 'margin-top: 22px; visibility: visible; max-height: 1000px; opacity: 1;display:block;';
+});
+
+$('#form-modal').on('submit', function( event ) {
+    event.preventDefault()	
+	var form_param = document.querySelectorAll("#form-modal input")
+	console.log(form_param)
+	
+	
+    $.ajax({
+      data: {
+        name:form_param[1].value,
+        phone:form_param[2].value, 
+		question:document.querySelectorAll("#form-modal #question")[0].value,
+        csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
+      },
+      type: $(this).attr('method'),
+      datatype: 'json',
+      url:'{% url "fb" %}',
+    })	
+	document.querySelectorAll("#form-modal input")[1].value = ''
+	document.querySelectorAll("#form-modal input")[2].value = ''
+	document.querySelectorAll("#form-modal #question")[0].value = ''
+	document.querySelectorAll("#form-modal .success-send")[0].style.cssText = 'margin-top: 22px; visibility: visible; max-height: 1000px; opacity: 1; display:block;';
+});
+const close_model_point = () => {
+	popups_windows.classList.remove("show-popup")
+	popups.style.display = "none"
+	communicate.style.display = "none"
+	rectangle = null
+	$('#popups').parent().css('z-index', 1);
+	$('.button-model').css('z-index', 800);
+	$('#overlay2').css('display', "none");
+}
+{% comment %} Клик по .nav-link скрытие меню бара {% endcomment %}
+document.querySelectorAll('.navbar-nav .nav-link').forEach(item => {
+	if (window.outerWidth < 959){
+		item.addEventListener('click', () => {
+			document.querySelector('.navbar-toggler').click();
+		});
+	}
+});
+
+var popups_windows = document.getElementById("popups")
+var canvas_container_s = document.getElementById("canvas-container")
+
+canvas_container_s.addEventListener('click', function(event) {
+	if (window.outerWidth < 959){
+		if (!popups_windows.contains(event.target)) {
+			close_model_point();
+		}
+	}
+});
+document.addEventListener("click", function (event) {
+	if (window.outerWidth < 959){
+		var isClickInside = document.querySelector(".navbar").contains(event.target);
+		if (!isClickInside) {
+			var navbarToggler = document.querySelector(".navbar-toggler");
+			var navbarCollapse = document.querySelector(".navbar-collapse");
+			if (navbarToggler.getAttribute("aria-expanded") === "true") {
+				navbarToggler.click();
+			}
+		}
+	}
+});
+$(document).ready(function() {
+	if (window.outerWidth < 959){
+		$(".navbar-toggler").click(function() {
+			$("#overlay").toggle(); // Показать/скрыть затемнение
+		});
+	}
+});
+</script>
+<script>
+	var svgElement_tel = document.getElementById('my-svg-tel');
+	var pathElement1 = document.getElementById('path1');
+	var svgElement_tg = document.getElementById('my-svg-tg');
+	var pathElement2 = document.getElementById('path2');
+
+	var svgElement_tel_cont = document.getElementById('my-svg-tel-cont');
+	var pathElement3 = document.getElementById('path3');
+	var svgElement_tg_cont = document.getElementById('my-svg-tg-cont');
+	var pathElement4 = document.getElementById('path4');
+
+	svgElement_tel.addEventListener('mouseover', function() {
+		pathElement1.setAttribute('fill', '#595959');
+	});
+	svgElement_tel.addEventListener('mouseout', function() {
+		pathElement1.setAttribute('fill', '#3E3E3E');
+	});
+
+	svgElement_tg.addEventListener('mouseover', function() {
+		pathElement2.setAttribute('fill', '#595959');
+	});
+	svgElement_tg.addEventListener('mouseout', function() {
+		pathElement2.setAttribute('fill', '#3E3E3E');
+	});
+
+
+	svgElement_tel_cont.addEventListener('mouseover', function() {
+		pathElement3.setAttribute('fill', '#595959');
+	});
+	svgElement_tel_cont.addEventListener('mouseout', function() {
+		pathElement3.setAttribute('fill', '#3E3E3E');
+	});
+
+	svgElement_tg_cont.addEventListener('mouseover', function() {
+		pathElement4.setAttribute('fill', '#595959');
+	});
+	svgElement_tg_cont.addEventListener('mouseout', function() {
+		pathElement4.setAttribute('fill', '#3E3E3E');
+	});
+
+</script>
+
+</html>
